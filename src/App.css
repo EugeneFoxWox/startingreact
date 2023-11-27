@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1250px;
+ 
+  background-image: url("/src/img/Rectangle.png");
+  background-size: cover;
 }
 
 .App-logo {
@@ -41,4 +43,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container{
+  margin: 0, auto;
+  display: flex;
+  align-items: center;
+  max-width: 1250px;
 }

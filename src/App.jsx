@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import './components/sender/Sender.css';
 import './components/comment/Comment.css';
@@ -31,14 +31,16 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Привет Мир, я - {nname}</h1>
-      </header>
-      
-      <Sender addComment={handleClickAddComment}/>
-      {comments.map((comment) => 
-          <Comment name={comment.name} content={comment.content}/>
-      )}
+      <div className="container">
+        <header>
+          <h1>Привет Мир, я - {nname}</h1>
+        </header>
+        
+        <Sender addComment={handleClickAddComment}/>
+        {comments.map((comment) => 
+            <Comment name={comment.name} content={comment.content}/>
+        )}
+      </div>
       
     </div>
   );
