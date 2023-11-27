@@ -1,0 +1,24 @@
+.Comment{
+    display: flex;
+    gap: 15px;
+    
+}
+
+.block-comment{
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    width: 550px;
+    background-color: rgb(188, 188, 188);
+    border-radius: 5px;
+}
+
+.avatar img{
+    height: 100px;
+    width: 100px;
+}
+
+.text-content{
+    max-width: 430px;
+}
