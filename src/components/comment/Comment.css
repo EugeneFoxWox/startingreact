@@ -1,9 +1,3 @@
-.Comment{
-    display: flex;
-    gap: 15px;
-    
-}
-
 .block-comment{
     margin-top: 15px;
     padding: 5px;
@@ -21,5 +15,5 @@
 }
 
 .text-content{
-    max-width: 430px;
+    flex-grow: 1;
 }
