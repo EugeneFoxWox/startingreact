@@ -14,6 +14,29 @@
     width: 100px;
 }
 
+
 .text-content{
     flex-grow: 1;
+    word-break: break-all;
+}
+
+.block-comment button{
+    width: max-content;
+    border: none;
+    background-color: white;
+}
+
+
+.block-comment .button-like-active{
+    border: none;
+    background-color: rgb(213, 130, 13);
+}
+
+.block-comment .buttons{
+    min-width: 135px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
 }

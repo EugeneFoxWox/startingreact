@@ -5,21 +5,16 @@ import './components/comment/Comment.css';
 import Comment from './components/comment/Comment';
 import { useState } from 'react'
 import Sender from './components/sender/Sender';
+import { defaultComments } from './constants/comments';
 import { avatars } from './constants/avatars';
+import { nname } from './constants/siteNames';
 import { getRandomIntInclusive } from './helpers/getRandomIntInclusive';
 
 function App() {
-  let nname = "Компьютер"
+ 
 
   const [comments, setComments] = useState(
-    [
-      { id: 1, name: "React pro", content: "Bezdablfun", youLike: false, avatar: avatars[0] },
-      { id: 2, name: "Понять", content: "Простить", youLike: false, avatar: avatars[1] },
-      { id: 3, name: "дабл", content: "фани", youLike: false, avatar: avatars[2] },
-      { id: 4, name: "резня", content: "Простить", youLike: false, avatar: avatars[3] },
-    ]
-
-
+    defaultComments
   );
 
 
@@ -27,9 +22,9 @@ function App() {
   const handleClickAddComment = function (name, content) {
     const randomAvatarIndex = getRandomIntInclusive(0, avatars.length - 1)
 
-    console.log(randomAvatarIndex)
 
     const id = Date.now()
+    const randomNameIndex = getRandomIntInclusive(0, siteNames.length - 1)
 
     setComments([{ id, name, content, avatar: avatars[randomAvatarIndex] }, ...comments])
 
@@ -49,7 +44,6 @@ function App() {
       return comment;
     }));
   }
-
 
 
   return (

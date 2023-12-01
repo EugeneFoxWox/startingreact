@@ -27,8 +27,10 @@ function Sender({ addComment }) {
 
   return (
     <form className="sender" onSubmit={handleSubmitForm}>
-      <input placeholder="Ваше имя" className='name' type="text" value={name} onChange={handleChangeName} />
-      <input placeholder="Ваше мнение о нас" className='content' type="text" value={content} onChange={handleChangeContent} />
+      <div className='inputs'>
+        <input title='Для особо одаренных, ИМЯ' placeholder="Ваше имя" className='name' type="text" value={name} onChange={handleChangeName} />
+        <textarea maxLength="300" title='Тут мнение' placeholder="Ваше мнение о нас" className='content' type="text" value={content} onChange={handleChangeContent} />
+      </div>
       <button>Отправить</button>
     </form>
   );

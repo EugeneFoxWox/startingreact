@@ -1,13 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  padding: 3px 5px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
  
   background-image: url("/src/img/Rectangle.png");
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .container{
