@@ -1,8 +1,8 @@
 {
-  "short_name": "React App",
+  "short_name": "Чатик",
   "name": "Create React App Sample",
   "icons": [
-    
+    "favicon.ico"
   ],
   "start_url": ".",
   "display": "standalone",

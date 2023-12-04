@@ -15,10 +15,10 @@ function Sender({ addComment }) {
   const handleSubmitForm = function (event) {
     event.preventDefault()
     if (name === "") {
-      return alert("E,L@н имя то напиши")
+      return alert("Напишите имя")
     }
     if (content === "") {
-      return alert("Ну ты ля попуск без мнения")
+      return alert("Не забудьте мнение о нас!")
     }
     addComment(name, content)
     setName("")
@@ -28,7 +28,7 @@ function Sender({ addComment }) {
   return (
     <form className="sender" onSubmit={handleSubmitForm}>
       <div className='inputs'>
-        <input title='Для особо одаренных, ИМЯ' placeholder="Ваше имя" className='name' type="text" value={name} onChange={handleChangeName} />
+        <input title='ИМЯ' placeholder="Ваше имя" className='name' type="text" value={name} onChange={handleChangeName} />
         <textarea maxLength="300" title='Тут мнение' placeholder="Ваше мнение о нас" className='content' type="text" value={content} onChange={handleChangeContent} />
       </div>
       <button>Отправить</button>

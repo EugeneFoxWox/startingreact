@@ -24,7 +24,6 @@ function App() {
 
 
     const id = Date.now()
-    const randomNameIndex = getRandomIntInclusive(0, siteNames.length - 1)
 
     setComments([{ id, name, content, avatar: avatars[randomAvatarIndex] }, ...comments])
 
